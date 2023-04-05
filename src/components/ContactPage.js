@@ -4,20 +4,15 @@ import ContactList from "./ContactList"
 
 //tamrin : add id to the contacts (delete)
 //tamrin: refresh page, list contact show -> localStorage
+//tamrin: https://github.com/typicode/json-server
 
 export default function ContactPage() {
   const [contacts, setContacts] = useState([])
-
-  // {name:'dfadsf', email:'sdas@asdasd.com', phone:'091218989'}
-
   const addContact = (contact) => {
     setContacts([...contacts, contact])
   }
 
   const handleDelete = (index) => {
-    //filter index
-
-    console.log(index)
     setContacts(contacts.filter((contact, i) => i !== index))
   }
   return (
