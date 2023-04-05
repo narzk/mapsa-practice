@@ -1,5 +1,7 @@
 import "./App.css"
 import Card from "./components/Card"
+import ContactForm from "./components/ContactForm"
+import ContactPage from "./components/ContactPage"
 import Counter from "./components/Counter"
 import Input from "./components/Input"
 
@@ -8,7 +10,8 @@ function App() {
     <div className="App">
       {/* <Card /> */}
       {/* <Input/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <ContactPage/>
     </div>
   )
 }
